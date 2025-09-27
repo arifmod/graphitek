@@ -1,3 +1,5 @@
-document.getElementById('clickMe').addEventListener('click', () => {
-  alert('Your site is working!');
-});
+// Toggle mobile menu
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}

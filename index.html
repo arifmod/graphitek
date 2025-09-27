@@ -1,16 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My First Site</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphitek Printing Qatar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1> Razake website deploy aaki, 🎉, eni nammakk content, design, photos ellam undaakanam, </h1>
-  <p>This is my very first static website.</p>
-  <button id="clickMe">Click me</button>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Graphitek</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div><div></div><div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <script src="script.js"></script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Your Printing Solutions in Qatar</h1>
+            <h1> +974 3029 8953</h1>
+            <p>High-quality digital printing, packaging, and promotional products.</p>
+            
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Digital Printing</h3>
+                    <p>High-quality brochures, flyers, business cards, and more.</p>
+                </div>
+                <div class="card">
+                    <h3>Packaging Solutions</h3>
+                    <p>Custom packaging for products, boxes, and labels.</p>
+                </div>
+                <div class="card">
+                    <h3>Promotional Products</h3>
+                    <p>Custom mugs, t-shirts, pens, and branded gifts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Our Work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 1"></div>
+                <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 2"></div>
+                <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 3"></div>
+                <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"Excellent quality and fast delivery!"</p>
+                    <span>- Client A</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Highly recommend Graphitek for all printing needs."</p>
+                    <span>- Client B</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:+97430298953">+974 3029 8953</a></p>
+        <p>WhatsApp: 
+            <a href="https://wa.me/97430298953" target="_blank">Chat on WhatsApp</a>
+        </p>
+        <p>Email: <a href="mailto:info@graphitekqatar.com">sales@graphitekqatar.com</a></p>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Graphitek Printing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
