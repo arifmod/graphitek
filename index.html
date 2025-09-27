@@ -3,106 +3,306 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphitek Printing Qatar</title>
+    <title>Graphitek - Professional Printing Services in Doha, Qatar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="logo">Graphitek</div>
+        <div class="container header-container">
+            <a href="#" class="logo">Graphitek</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav>
-                <ul class="nav-links">
+                <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="hamburger" onclick="toggleMenu()">
-                    <div></div><div></div><div></div>
-                </div>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
         <div class="container">
-            <h1>Your Printing Solutions in Qatar</h1>
-            <h1> +974 3029 8953</h1>
-            <p>High-quality digital printing, packaging, and promotional products.</p>
-            
+            <h1>Professional Printing Solutions in Doha</h1>
+            <p>High-quality printing services for businesses and individuals in Qatar. From business cards to large format prints, we deliver excellence.</p>
+            <a href="#contact" class="btn">Get a Quote</a>
+            <a href="#services" class="btn btn-light">Our Services</a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Digital Printing</h3>
-                    <p>High-quality brochures, flyers, business cards, and more.</p>
+            <h2>Our Printing Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/commercial-printing.jpg" alt="Commercial Printing">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-print"></i>
+                        <h3>Commercial Printing</h3>
+                        <p>Brochures, flyers, business cards, and all your commercial printing needs with premium quality.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Packaging Solutions</h3>
-                    <p>Custom packaging for products, boxes, and labels.</p>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/large-format.jpg" alt="Large Format Printing">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-palette"></i>
+                        <h3>Large Format Printing</h3>
+                        <p>Banners, posters, and signage for events, retail, and promotional purposes.</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Promotional Products</h3>
-                    <p>Custom mugs, t-shirts, pens, and branded gifts.</p>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="images/book-printing.jpg" alt="Book Printing">
+                    </div>
+                    <div class="service-content">
+                        <i class="fas fa-book"></i>
+                        <h3>Book & Magazine Printing</h3>
+                        <p>High-quality printing for publications, catalogs, and multi-page documents.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Graphitek</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Excellence in Printing Services</h3>
+                    <p>Graphitek has been providing top-quality printing services to businesses and individuals across Doha, Qatar. Our commitment to quality, attention to detail, and customer satisfaction sets us apart.</p>
+                    <p>We utilize state-of-the-art printing technology and work with a team of experienced professionals to ensure your printing projects are completed to the highest standards.</p>
+                    <p>Whether you need a small batch of business cards or a large corporate printing project, we have the expertise and equipment to deliver outstanding results.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>500+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h4>1000+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>15+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about-us.jpg" alt="Graphitek Team">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+    <section id="portfolio">
         <div class="container">
             <h2>Our Work</h2>
             <div class="portfolio-grid">
-                <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 1"></div>
-                <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 2"></div>
-                <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 3"></div>
-                <div class="portfolio-item"><img src="https://via.placeholder.com/300x200" alt="Project 4"></div>
+                <div class="portfolio-item">
+                    <img src="images/business-cards.jpg" alt="Business Cards" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Business Cards</h3>
+                        <p>Premium quality business card printing</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/brochures.jpg" alt="Brochures" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Brochures</h3>
+                        <p>Full-color brochure printing</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/posters.jpg" alt="Posters" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Event Posters</h3>
+                        <p>Large format poster printing</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/packaging.jpg" alt="Packaging" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Packaging</h3>
+                        <p>Custom packaging solutions</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <h2>What Our Clients Say</h2>
-            <div class="testimonial-cards">
-                <div class="testimonial-card">
-                    <p>"Excellent quality and fast delivery!"</p>
-                    <span>- Client A</span>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"Graphitek delivered exceptional quality for our company's marketing materials. The attention to detail and customer service were outstanding. We'll definitely be using them for all our future printing needs."</p>
+                    <div class="client-info">
+                        <img src="images/client1.jpg" alt="Client" class="client-img">
+                        <div>
+                            <p class="client-name">Sarah Johnson</p>
+                            <p>Marketing Director, TechSolutions Inc.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial-card">
-                    <p>"Highly recommend Graphitek for all printing needs."</p>
-                    <span>- Client B</span>
+                <div class="testimonial">
+                    <p>"I needed urgent printing for an event, and Graphitek came through with flying colors. The quality was superb, and they delivered ahead of schedule. Highly recommended!"</p>
+                    <div class="client-info">
+                        <img src="images/client2.jpg" alt="Client" class="client-img">
+                        <div>
+                            <p class="client-name">Michael Thompson</p>
+                            <p>Event Coordinator, City Events</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"As a small business owner in Doha, I appreciate the personalized service and competitive pricing. Graphitek has been my go-to printer for years, and they never disappoint."</p>
+                    <div class="client-info">
+                        <img src="images/client3.jpg" alt="Client" class="client-img">
+                        <div>
+                            <p class="client-name">Lisa Chen</p>
+                            <p>Owner, Bloom Boutique</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <span class="slider-dot active" data-slide="0"></span>
+                    <span class="slider-dot" data-slide="1"></span>
+                    <span class="slider-dot" data-slide="2"></span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-<section id="contact" class="contact">
+<section id="contact">
     <div class="container">
-        <h2>Contact Us</h2>
-        <p>Phone: <a href="tel:+97430298953">+974 3029 8953</a></p>
-        <p>WhatsApp: 
-            <a href="https://wa.me/97430298953" target="_blank">Chat on WhatsApp</a>
-        </p>
-        <p>Email: <a href="mailto:info@graphitekqatar.com">sales@graphitekqatar.com</a></p>
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Our Location</h4>
+                        <p>Doha, Qatar</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone Number</h4>
+                        <p>+974 3029 8953</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Address</h4>
+                        <p>info@graphitek.qa</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Business Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <h4>Visit Our Location</h4>
+                    <p>We are conveniently located in Doha, Qatar. Visit us to discuss your printing needs.</p>
+                    <div class="simple-map">
+                        <p><i class="fas fa-map-pin"></i> Doha, Qatar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-promo">
+                <h3>Why Choose Graphitek?</h3>
+                <div class="promo-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>High-quality printing with premium materials</p>
+                </div>
+                <div class="promo-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Fast turnaround times</p>
+                </div>
+                <div class="promo-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Competitive pricing</p>
+                </div>
+                <div class="promo-item">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Expert advice and consultation</p>
+                </div>
+                <a href="tel:+97430298953" class="btn call-btn">
+                    <i class="fas fa-phone"></i> Call Us Now
+                </a>
+            </div>
+        </div>
     </div>
 </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Graphitek Printing. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Graphitek</h3>
+                    <p>Your trusted partner for high-quality printing solutions in Doha, Qatar. We deliver excellence in every project.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Commercial Printing</a></li>
+                        <li><a href="#">Large Format Printing</a></li>
+                        <li><a href="#">Book & Magazine Printing</a></li>
+                        <li><a href="#">Business Cards</a></li>
+                        <li><a href="#">Banners & Signage</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Special Offer</h3>
+                    <p>Contact us for printing tips and special offers.</p>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Graphitek. All Rights Reserved. | Doha, Qatar | +974 3029 8953</p>
+            </div>
         </div>
     </footer>
 
