@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="#" class="logo">Graphitek</a>
-            <button class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+<!-- Header -->
+<header>
+    <div class="container header-container">
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="Graphitek Logo - Trading Contracting & Services" class="company-logo">
         </div>
-    </header>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
 <!-- Hero Section -->
 <section class="hero" id="home">
@@ -44,43 +46,102 @@
 </section>
 
     <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Printing Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="images/commercial-printing.jpg" alt="Commercial Printing">
-                    </div>
-                    <div class="service-content">
-                        <i class="fas fa-print"></i>
-                        <h3>Commercial Printing</h3>
-                        <p>Brochures, flyers, business cards, and all your commercial printing needs with premium quality.</p>
-                    </div>
+<section id="services">
+    <div class="container">
+        <h2>Our Printing Services</h2>
+        <div class="services-grid">
+            <!-- Offset Printing -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="images/offset-printing.jpg" alt="Offset Printing">
                 </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="images/large-format.jpg" alt="Large Format Printing">
-                    </div>
-                    <div class="service-content">
-                        <i class="fas fa-palette"></i>
-                        <h3>Large Format Printing</h3>
-                        <p>Banners, posters, and signage for events, retail, and promotional purposes.</p>
-                    </div>
+                <div class="service-content">
+                    <i class="fas fa-print"></i>
+                    <h3>Offset Printing</h3>
+                    <p>High-volume commercial printing with superior color accuracy and consistency. Perfect for brochures, catalogs, magazines, and large quantity projects.</p>
+                    <ul class="service-features">
+                        <li>Large quantity printing</li>
+                        <li>Exceptional color quality</li>
+                        <li>Cost-effective for bulk orders</li>
+                        <li>Professional finishing options</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="images/book-printing.jpg" alt="Book Printing">
-                    </div>
-                    <div class="service-content">
-                        <i class="fas fa-book"></i>
-                        <h3>Book & Magazine Printing</h3>
-                        <p>High-quality printing for publications, catalogs, and multi-page documents.</p>
-                    </div>
+            </div>
+            
+            <!-- Digital Printing -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="images/digital-printing.jpg" alt="Digital Printing">
+                </div>
+                <div class="service-content">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Digital Printing</h3>
+                    <p>Quick turnaround printing for small to medium quantities. Ideal for business cards, flyers, presentations, and personalized printing.</p>
+                    <ul class="service-features">
+                        <li>Fast turnaround times</li>
+                        <li>Short to medium runs</li>
+                        <li>Variable data printing</li>
+                        <li>No minimum quantity</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Packaging Products -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="images/packaging-products.jpg" alt="Packaging Products">
+                </div>
+                <div class="service-content">
+                    <i class="fas fa-box"></i>
+                    <h3>Packaging Products</h3>
+                    <p>Custom packaging solutions that protect your products and enhance your brand. From boxes and labels to custom packaging designs.</p>
+                    <ul class="service-features">
+                        <li>Custom box printing</li>
+                        <li>Product labels & stickers</li>
+                        <li>Branded packaging</li>
+                        <li>Protective packaging solutions</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Promotional Products -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="images/promotional-products.jpg" alt="Promotional Products">
+                </div>
+                <div class="service-content">
+                    <i class="fas fa-gift"></i>
+                    <h3>Promotional Products</h3>
+                    <p>Branded merchandise and promotional items that increase your company visibility. Perfect for corporate gifts and marketing campaigns.</p>
+                    <ul class="service-features">
+                        <li>Branded merchandise</li>
+                        <li>Corporate gifts</li>
+                        <li>Trade show materials</li>
+                        <li>Custom promotional items</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Wedding Cards -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="images/wedding-cards.jpg" alt="Wedding Cards">
+                </div>
+                <div class="service-content">
+                    <i class="fas fa-heart"></i>
+                    <h3>Wedding Cards</h3>
+                    <p>Elegant and personalized wedding invitations that make your special day unforgettable. Traditional to modern designs with premium finishes.</p>
+                    <ul class="service-features">
+                        <li>Custom wedding invitations</li>
+                        <li>Premium paper stocks</li>
+                        <li>Foil stamping & embossing</li>
+                        <li>Matching accessories</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -94,15 +155,15 @@
                     <p>Whether you need a small batch of business cards or a large corporate printing project, we have the expertise and equipment to deliver outstanding results.</p>
                     <div class="stats">
                         <div class="stat">
-                            <h4>500+</h4>
+                            <h4>100+</h4>
                             <p>Happy Clients</p>
                         </div>
                         <div class="stat">
-                            <h4>1000+</h4>
+                            <h4>250+</h4>
                             <p>Projects Completed</p>
                         </div>
                         <div class="stat">
-                            <h4>15+</h4>
+                            <h4>10+</h4>
                             <p>Years Experience</p>
                         </div>
                     </div>
@@ -236,8 +297,8 @@
                     <i class="fas fa-clock"></i>
                     <div>
                         <h4>Business Hours</h4>
-                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                        <p>Saturday: 9:00 AM - 2:00 PM</p>
+                        <p>Saturday - Thursaday: 8:00 AM - 6:00 PM</p>
+                        <p>Friday: Holiday</p>
                     </div>
                 </div>
             </div>
