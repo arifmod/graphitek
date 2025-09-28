@@ -717,14 +717,16 @@ footer {
     }
 }
 
-/* Logo Styles */
-.logo-container {
-    display: flex;
-    align-items: center;
+/* Logo Styles - Make these more specific */
+header .logo-container .company-logo {
+    height: 80px !important;  /* Add !important to force override */
+    width: auto;
+    max-width: 300px;
+    object-fit: contain;
 }
 
 .company-logo {
-    height: 90px;
+    height: 80px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -735,14 +737,14 @@ footer {
 
 /* Mobile logo styles */
 @media (max-width: 768px) {
-    .company-logo {
-        height: 50px;
+    header .logo-container .company-logo {
+        height: 65px !important;
     }
 }
 
 @media (max-width: 480px) {
-    .company-logo {
-        height: 45px;
+    header .logo-container .company-logo {
+        height: 55px !important;
     }
 }
 
