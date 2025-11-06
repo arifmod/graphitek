@@ -795,3 +795,38 @@ header .logo-container .company-logo {
         border-radius: 4px;
     }
 }
+/* Client List Section */
+.clients {
+    background-color: var(--light);
+    text-align: center;
+}
+
+.client-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* This centers the photo horizontally */
+    align-items: center; /* This centers vertically if needed */
+}
+
+.client-list-photo {
+    width: 100%;
+    max-width: 800px; /* Control maximum size */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: block; /* Ensures proper centering */
+    margin: 0 auto; /* Centers the image within its container */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .client-list {
+        max-width: 100%;
+    }
+    
+    .client-list-photo {
+        border-radius: 4px;
+        max-width: 100%; /* Full width on mobile */
+    }
+}
