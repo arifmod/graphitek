@@ -766,3 +766,32 @@ header .logo-container .company-logo {
     color: var(--secondary);
     font-weight: bold;
 }
+
+/* Client List Section */
+.clients {
+    background-color: var(--light);
+    text-align: center;
+}
+
+.client-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.client-list-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .client-list {
+        max-width: 100%;
+    }
+    
+    .client-list-photo {
+        border-radius: 4px;
+    }
+}
