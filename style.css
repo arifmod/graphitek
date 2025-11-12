@@ -774,25 +774,17 @@ header .logo-container .company-logo {
     text-align: center;
 }
 
-.client-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.client-photo-item {
+.client-list {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .client-photo {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
@@ -800,8 +792,7 @@ header .logo-container .company-logo {
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .client-grid {
-        gap: 20px;
+    .client-list {
         max-width: 100%;
     }
     
