@@ -767,66 +767,45 @@ header .logo-container .company-logo {
     font-weight: bold;
 }
 
+
 /* Client List Section */
 .clients {
     background-color: var(--light);
     text-align: center;
 }
 
-.client-list {
-    max-width: 900px;
+.client-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.client-list-photo {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    .client-list {
-        max-width: 100%;
-    }
-    
-    .client-list-photo {
-        border-radius: 4px;
-    }
-}
-/* Client List Section */
-.clients {
-    background-color: var(--light);
-    text-align: center;
-}
-
-.client-list {
-    max-width: 900px;
-    margin: 0 auto;
+.client-photo-item {
     display: flex;
-    justify-content: center; /* This centers the photo horizontally */
-    align-items: center; /* This centers vertically if needed */
+    justify-content: center;
+    align-items: center;
 }
 
-.client-list-photo {
+.client-photo {
     width: 100%;
-    max-width: 800px; /* Control maximum size */
+    max-width: 500px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    display: block; /* Ensures proper centering */
-    margin: 0 auto; /* Centers the image within its container */
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .client-list {
+    .client-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
         max-width: 100%;
     }
     
-    .client-list-photo {
+    .client-photo {
+        max-width: 100%;
         border-radius: 4px;
-        max-width: 100%; /* Full width on mobile */
     }
 }
